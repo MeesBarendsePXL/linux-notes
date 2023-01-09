@@ -41,6 +41,16 @@ a*	Greedy quantifier
 a*?	Lazy quantifier
 a*+	Possessive quantifier
 
+chmod # bv. chmod 761
+0: No permission
+1: Execute
+2: Write
+3: Write and Execute
+4: Read
+5: Read and Execute
+6: Read and Write
+7: Read, Write, and Execute
+
 /etc/passwd
 id username
 sudo useradd -m #make new -d #home dir /home/teacher -c #add comment (meta data) "Teacher Account" #username teacher
@@ -49,3 +59,27 @@ passwd #to change password current user
 sudo passwd username #change password of username
 su - teacher #change user 
 whoami #see current user
+
+groupadd #add group
+groupdel
+sudo usermod -a -G it teacher # add teacher to it
+restart session for changes to take effect
+
+ sudo chown teacher:root config folder #change ownerschip to user:group of congif and folder folders
+ umask #default permissions
+ 
+ 
+ working tougheter 
+ also see acl
+ sudo groupadd ict
+ sudo usermod -aG ict liam
+ sudo usermod -aG ict jacob
+ sudo chown teacher:root folder
+ chmod g+s folder # keeps permissions when written s and S in place of x with s = s+x S = s
+ 
+sudo apt install acl
+getfacl memo #to see acl
+setfacl -m u:teacher:rw memo #user
+setfacl -m g:it:rw memo #group
+setfacl -m m:r memo #set max permission
+setfacl -x g:it memo #remove g or s
