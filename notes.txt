@@ -1,4 +1,5 @@
 man 5 passwd
+#!/bin/bash
 history 10
 file test.txt #id file
 locate name # -i case insensetive # -b not searching dir names
