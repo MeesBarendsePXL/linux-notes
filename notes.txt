@@ -2,7 +2,8 @@ man 5 passwd (1 en 5)
 3 vragen over ontstaan
 
 #!/bin/bash
-cat auth.log | grep -E "Accepted|Failed" | cut -d ':' -f5 | cut -d' ' -f2 | sort | uniq
+cat auth.log | grep -E "Accepted|Failed" |tr 'a-z' 'A-Z'| cut -d ':' -f5 | cut -d' ' -f2 | sort | uniq
+!!rotatie!! tr 'a-z' 'm-za-l'
 history 10
 file test.txt #id file
 updatedb
