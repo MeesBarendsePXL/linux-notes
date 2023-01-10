@@ -1,7 +1,11 @@
-man 5 passwd
+man 5 passwd (1 en 5)
+3 vragen over ontstaan
+
 #!/bin/bash
+cat auth.log | grep -E "Accepted|Failed" | cut -d ':' -f5 | cut -d' ' -f2 | sort | uniq
 history 10
 file test.txt #id file
+updatedb
 locate name # -i case insensetive # -b not searching dir names
 tac # reversed cat
 head -10 text.txt
@@ -84,3 +88,15 @@ setfacl -m u:teacher:rw memo #user
 setfacl -m g:it:rw memo #group
 setfacl -m m:r memo #set max permission
 setfacl -x g:it memo #remove g or s
+
+snap 
+snap search
+snap list (installed apps)
+snap list --all (shows all the installed versions)
+snap revert --revision (go back to a previous version of the snap)
+snap info
+snap install
+snap remove
+snap refresh (upgrades the snaps, happens every day automatically)
+snap changes (history of changes)
+snap version
