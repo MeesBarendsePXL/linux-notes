@@ -46,7 +46,8 @@ a{3,6}	Between 3 and 6 of a
 a*	Greedy quantifier
 a*?	Lazy quantifier
 a*+	Possessive quantifier
-
+^a beggining with a 
+a$ ends with a
 chmod # bv. chmod 761
 0: No permission
 1: Execute
