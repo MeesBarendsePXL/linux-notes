@@ -48,6 +48,8 @@ a*?	Lazy quantifier
 a*+	Possessive quantifier
 ^a beggining with a 
 a$ ends with a
+
+
 chmod # bv. chmod 761
 0: No permission
 1: Execute
@@ -57,6 +59,7 @@ chmod # bv. chmod 761
 5: Read and Execute
 6: Read and Write
 7: Read, Write, and Execute
+unmask 000 trekt de waarde af van 666 om zo de default permissions te krijgen
 
 /etc/passwd
 id username
